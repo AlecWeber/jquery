@@ -45,3 +45,11 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+div {
+  height: 75px;
+  width: 75px;
+  background-color: red;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 75px; }

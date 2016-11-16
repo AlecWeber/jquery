@@ -1,12 +1,17 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-  $('#slide').click(function(){
-    $('#jquery').slideToggle(2000);
-  });
-  $('#fadee').click(function(){
-    $('#jquery').fadeToggle(2000);
-  });
-  $('#jquery').click(function(){
-    $('div, ul li:nth-child(2)').fadeTo('slow', 0.5);
-  });
+    $('#submit').click(function() {
+        var $input = $('input[name="fName"]').val();
+        $('ul').append('<li>' + $input + '<button class="remove"></button></li>');
+        $('input[name="fName"]').val('');
+    });
+
+    $(document).on('click', 'li', function() {
+        $(this).remove();
+    });
+
+    $('#clear').click(function() {
+        $('ul').empty();
+    });
+
 });

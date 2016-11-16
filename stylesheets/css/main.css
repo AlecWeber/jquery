@@ -47,7 +47,8 @@ table {
   border-spacing: 0; }
 
 body {
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 50px 0 0 200px; }
 
 #jquery {
   height: 150px;
@@ -82,3 +83,21 @@ body {
   line-height: 50px; }
   #fadee:hover {
     cursor: pointer; }
+
+#toDo {
+  height: 300px;
+  width: 300px;
+  background-color: #FEEE70; }
+  #toDo h1 {
+    text-align: center; }
+  #toDo ul {
+    display: list-item;
+    padding-left: 20px; }
+
+input [type="text"] {
+  width: 200px;
+  height: 75px; }
+
+li {
+  margin-left: 20px;
+  display: list-item; }
